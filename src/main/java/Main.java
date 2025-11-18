@@ -27,7 +27,7 @@ public class Main {
 
         while (!isValid) {
             try {
-                if (participantName == null || participantName.isEmpty()) {
+                if (participantName == null || participantName.isBlank()) {
                     System.out.printf("— Введите название машины №%d:\n", carNumber);
                     participantName = scanner.nextLine();
                     participantCar.setName(participantName);

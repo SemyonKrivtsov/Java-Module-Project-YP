@@ -11,7 +11,7 @@ public class Car implements Comparable<Car> {
     }
 
     public void setName(String name) {
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Имя не может быть пустым");
         }
         this.name = name;
